@@ -1,0 +1,97 @@
+{
+  "12": [
+    {
+      "caption": "Bedroom",
+      "file": "/images/property-12-1.jpg",
+      "size": 31342
+    },
+    {
+      "caption": "Main room",
+      "file": "/images/property-12-2.jpg",
+      "size": 62688
+    },
+    {
+      "caption": "Hallway",
+      "file": "/images/property-12-3.jpg",
+      "size": 54288
+    },
+    {
+      "caption": "Kitchen sink",
+      "file": "/images/property-12-4.jpg",
+      "size": 117989
+    }
+  ],
+  "13": [
+    {
+      "caption": "Own bathroom",
+      "file": "/images/property-13-1.jpg",
+      "size": 35984
+    },
+    {
+      "caption": "Wardrobe rail",
+      "file": "/images/property-13-2.jpg",
+      "size": 33010
+    },
+    {
+      "caption": "Main room",
+      "file": "/images/property-13-3.jpg",
+      "size": 47666
+    },
+    {
+      "caption": "Kitchen sink",
+      "file": "/images/property-13-4.jpg",
+      "size": 65225
+    }
+  ],
+  "14": [
+    {
+      "caption": "Own bathroom",
+      "file": "/images/property-14-1.jpg",
+      "size": 35984
+    },
+    {
+      "caption": "Wardrobe rail",
+      "file": "/images/property-14-2.jpg",
+      "size": 33010
+    },
+    {
+      "caption": "Main room",
+      "file": "/images/property-14-3.jpg",
+      "size": 47666
+    },
+    {
+      "caption": "Kitchen sink",
+      "file": "/images/property-14-4.jpg",
+      "size": 65225
+    }
+  ],
+  "15": [
+    {
+      "caption": "Main room",
+      "file": "/images/property-15-1.jpg",
+      "size": 42827
+    },
+    {
+      "caption": "Kitchen sink",
+      "file": "/images/property-15-2.jpg",
+      "size": 53578
+    }
+  ],
+  "16": [
+    {
+      "caption": "Own bathroom",
+      "file": "/images/property-16-1.jpg",
+      "size": 61671
+    },
+    {
+      "caption": "Main room",
+      "file": "/images/property-16-2.jpg",
+      "size": 79961
+    },
+    {
+      "caption": "Kitchen sink",
+      "file": "/images/property-16-3.jpg",
+      "size": 70626
+    }
+  ]
+}

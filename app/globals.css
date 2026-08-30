@@ -67,7 +67,9 @@ section{ padding:56px 0; }
 .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:22px; }
 .card{ border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:#fff; transition:transform .15s, box-shadow .15s; cursor:pointer; }
 .card:hover{ transform:translateY(-3px); box-shadow:0 16px 30px -18px rgba(11,36,71,.35); }
-.card-img{ height:170px; background:linear-gradient(135deg,var(--sky),#dfeaff); display:flex; align-items:center; justify-content:center; color:var(--blue); font-weight:700; overflow:hidden; }
+.card-img{ height:170px; background:linear-gradient(135deg,var(--sky),#dfeaff); display:flex; align-items:center; justify-content:center; color:var(--blue); font-weight:700; overflow:hidden; position:relative; }
+.card-img-photo{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .7s ease; }
+.card-img-photo.is-active{ opacity:1; }
 .card-body{ padding:18px; }
 .card-body h3{ font-size:16.5px; color:var(--navy); margin-bottom:4px; }
 .card-meta{ color:var(--muted); font-size:13px; margin-bottom:10px; }

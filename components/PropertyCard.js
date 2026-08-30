@@ -1,23 +1,70 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { toTelHref, toWhatsAppHref } from "../data/properties";
 import WhatsAppIcon from "./WhatsAppIcon";
 import HeartIcon from "./HeartIcon";
 
+const AUTO_ADVANCE_MS = 3500;
+
 export default function PropertyCard({ property, onOpen, isFavorite, onToggleFavorite }) {
   const waMessage = `Hi, I'm interested in the ${property.title} (KSh ${property.rent.toLocaleString()}/mo) listed on House Search. Is it still available?`;
   const favorited = isFavorite(property.id);
+  const images = property.images || [];
+  const [index, setIndex] = useState(0);
+
+  // Auto-advance the carousel when there's more than one photo.
+  useEffect(() => {
+    if (images.length < 2) return;
+    const timer = setInterval(() => {
+      setIndex((i) => (i + 1) % images.length);
+    }, AUTO_ADVANCE_MS);
+    return () => clearInterval(timer);
+  }, [images.length]);
+
+  function goPrev(e) {
+    e.stopPropagation();
+    setIndex((i) => (i - 1 + images.length) % images.length);
+  }
+  function goNext(e) {
+    e.stopPropagation();
+    setIndex((i) => (i + 1) % images.length);
+  }
 
   return (
     <div className="card" onClick={() => onOpen(property)}>
-      <div className="card-img" style={{ position: "relative" }}>
-        {property.images?.[0] ? (
+      <div className="card-img">
+        {images.length > 0 ? (
           <img
-            src={property.images[0].src}
-            alt={property.images[0].caption || property.title}
+            key={images[index].src}
+            src={images[index].src}
+            alt={images[index].caption || property.title}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
         ) : (
           <span>🏠 {property.type}</span>
         )}
+
+        {images.length > 1 && (
+          <>
+            <button className="carousel-btn prev" onClick={goPrev} aria-label="Previous photo">
+              ‹
+            </button>
+            <button className="carousel-btn next" onClick={goNext} aria-label="Next photo">
+              ›
+            </button>
+            <div className="carousel-dots" onClick={(e) => e.stopPropagation()}>
+              {images.map((img, i) => (
+                <span
+                  key={img.src}
+                  className={i === index ? "active" : ""}
+                  onClick={() => setIndex(i)}
+                />
+              ))}
+            </div>
+          </>
+        )}
+
         <button
           className={`fav-btn${favorited ? " is-fav" : ""}`}
           aria-label={favorited ? "Remove from saved" : "Save this listing"}

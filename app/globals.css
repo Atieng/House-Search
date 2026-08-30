@@ -79,6 +79,13 @@ section{ padding:56px 0; }
 .fav-btn{ position:absolute; top:10px; right:10px; width:32px; height:32px; border-radius:50%; background:rgba(255,255,255,.92); display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(11,36,71,.18); transition:transform .12s; }
 .fav-btn:hover{ transform:scale(1.08); }
 .fav-btn.is-fav{ background:#fff; }
+.carousel-btn{ position:absolute; top:50%; transform:translateY(-50%); width:26px; height:26px; border-radius:50%; background:rgba(255,255,255,.85); border:none; display:flex; align-items:center; justify-content:center; font-size:16px; line-height:1; color:var(--navy); opacity:0; transition:opacity .15s; z-index:3; cursor:pointer; padding:0; }
+.card:hover .carousel-btn{ opacity:1; }
+.carousel-btn.prev{ left:8px; }
+.carousel-btn.next{ right:8px; }
+.carousel-dots{ position:absolute; bottom:9px; left:50%; transform:translateX(-50%); display:flex; gap:4px; z-index:3; }
+.carousel-dots span{ width:5px; height:5px; border-radius:50%; background:rgba(255,255,255,.6); transition:all .2s; cursor:pointer; display:block; }
+.carousel-dots span.active{ background:#fff; width:14px; border-radius:3px; }
 .fav-btn-inline{ display:flex; align-items:center; gap:6px; font-size:13px; font-weight:600; color:var(--navy); border:1.5px solid var(--line); border-radius:999px; padding:6px 13px; transition:border-color .15s; }
 .fav-btn-inline:hover{ border-color:var(--red); }
 .fav-btn-inline.is-fav{ border-color:var(--red); color:var(--red); }

@@ -14,7 +14,7 @@ export const AGENCY = {
 export const properties = [
   {
     id: 12,
-    images: [{ src: "/images/property-12-1.jpg", caption: "Bedroom" }, { src: "/images/property-12-2.jpg", caption: "Main room" }, { src: "/images/property-12-3.jpg", caption: "Hallway" }, { src: "/images/property-12-4.jpg", caption: "Kitchen sink" }],
+    images: [{ src: "/images/gate-c-bedsitter-1/1-bedroom.jpg", caption: "Bedroom" }, { src: "/images/gate-c-bedsitter-1/2-main-room.jpg", caption: "Main room" }, { src: "/images/gate-c-bedsitter-1/3-hallway.jpg", caption: "Hallway" }, { src: "/images/gate-c-bedsitter-1/4-kitchen.jpg", caption: "Kitchen sink" }],
     views: 214,
     title: "Gate C Bedsitter",
     area: "Gate C",
@@ -36,7 +36,7 @@ export const properties = [
   },
   {
     id: 13,
-    images: [{ src: "/images/property-13-1.jpg", caption: "Own bathroom" }, { src: "/images/property-13-2.jpg", caption: "Wardrobe rail" }, { src: "/images/property-13-3.jpg", caption: "Main room" }, { src: "/images/property-13-4.jpg", caption: "Kitchen sink" }],
+    images: [{ src: "/images/gate-c-bedsitter-2/1-bathroom.jpg", caption: "Own bathroom" }, { src: "/images/gate-c-bedsitter-2/2-wardrobe.jpg", caption: "Wardrobe rail" }, { src: "/images/gate-c-bedsitter-2/3-room.jpg", caption: "Main room" }, { src: "/images/gate-c-bedsitter-2/4-kitchen.jpg", caption: "Kitchen sink" }],
     views: 89,
     title: "Gate C Bedsitter (Self-Contained)",
     area: "Gate C",
@@ -58,14 +58,14 @@ export const properties = [
   },
   {
     id: 14,
-    images: [{ src: "/images/property-14-1.jpg", caption: "Own bathroom" }, { src: "/images/property-14-2.jpg", caption: "Wardrobe rail" }, { src: "/images/property-14-3.jpg", caption: "Main room" }, { src: "/images/property-14-4.jpg", caption: "Kitchen sink" }],
+    images: [{ src: "/images/gate-c-bedsitter-3/1-wardrobe.jpg", caption: "Wardrobe" }, { src: "/images/gate-c-bedsitter-3/2-kitchen.jpg", caption: "Kitchen sink" }, { src: "/images/gate-c-bedsitter-3/3-console.jpg", caption: "Storage console" }, { src: "/images/gate-c-bedsitter-3/4-toilet.jpg", caption: "Toilet" }],
     views: 132,
     title: "Gate C Bedsitter (Unit 3)",
     area: "Gate C",
     type: "Bedsitter",
     bedrooms: 0,
     bathrooms: 1,
-    rent: 9500,
+    rent: 7500,
     deposit: "Contact for details",
     status: "Available",
     vacancies: 4,
@@ -80,7 +80,7 @@ export const properties = [
   },
   {
     id: 15,
-    images: [{ src: "/images/property-15-1.jpg", caption: "Main room" }, { src: "/images/property-15-2.jpg", caption: "Kitchen sink" }],
+    images: [{ src: "/images/gate-c-bedsitter-4/1-room.jpg", caption: "Main room" }, { src: "/images/gate-c-bedsitter-4/2-kitchen.jpg", caption: "Kitchen sink" }],
     views: 306,
     title: "Gate C Bedsitter (Unit 4)",
     area: "Gate C",
@@ -102,7 +102,7 @@ export const properties = [
   },
   {
     id: 16,
-    images: [{ src: "/images/property-16-1.jpg", caption: "Own bathroom" }, { src: "/images/property-16-2.jpg", caption: "Main room" }, { src: "/images/property-16-3.jpg", caption: "Kitchen sink" }],
+    images: [{ src: "/images/gate-a-bedsitter-2/1-bathroom.jpg", caption: "Own bathroom" }, { src: "/images/gate-a-bedsitter-2/2-room.jpg", caption: "Main room" }, { src: "/images/gate-a-bedsitter-2/3-kitchen.jpg", caption: "Kitchen sink" }],
     views: 178,
     title: "Gate A Bedsitter (Unit 2)",
     area: "Gate A",

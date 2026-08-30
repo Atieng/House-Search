@@ -130,3 +130,4 @@ The admin dashboard auto-refreshes every 8 seconds.
 - No SMS/WhatsApp notification to you when a new submission or booking
   comes in — you have to check `/admin` (or leave it open, since it
   auto-refreshes).
+ 

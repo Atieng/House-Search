@@ -6,8 +6,8 @@
 
 export const AGENCY = {
   name: "House Search",
-  phone: "0100 644 779",
-  whatsappPhone: "0100644779", // used for the general "Chat on WhatsApp" CTA
+  phone: "0758 917 689",
+  whatsappPhone: "0758917689", // used for the general "Chat on WhatsApp" CTA
   location: "Juja, Kiambu County",
 };
 
